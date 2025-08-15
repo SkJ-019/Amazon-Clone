@@ -1,24 +1,26 @@
-.amazon-header{
+.amazon-header {
   background-color: rgb(19, 25, 33);
   color: white;
   padding-left: 15px;
   padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   position: fixed;
-  height: 60px;
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;  
+  height: 60px;
 }
 
-.left-section{
+.amazon-header-left-section {
   width: 180px;
 }
 
-@media (max-width: 800px){
-  .left-section{
+@media (max-width: 800px) {
+  .amazon-header-left-section {
     width: unset;
   }
 }
@@ -36,27 +38,28 @@
   border: 1px solid white;
 }
 
-.amazon-logo{
+.amazon-logo {
   width: 100px;
   margin-top: 5px;
 }
 
-.amazon-mobile-logo{
+.amazon-mobile-logo {
   display: none;
 }
 
-@media (max-width: 575px){
-  .amazon-logo{
+@media (max-width: 575px) {
+  .amazon-logo {
     display: none;
   }
-  .amazon-mobile-logo{
+
+  .amazon-mobile-logo {
     display: block;
     height: 35px;
     margin-top: 5px;
   }
 }
 
-.middle-section{
+.amazon-header-middle-section {
   flex: 1;
   max-width: 850px;
   margin-left: 10px;
@@ -93,7 +96,7 @@
   margin-top: 3px;
 }
 
-.right-section{
+.amazon-header-right-section {
   width: 180px;
   flex-shrink: 0;
   display: flex;
